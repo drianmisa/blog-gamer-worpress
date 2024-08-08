@@ -1,0 +1,107 @@
+.wrap-menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .toggle{
+        color: $colorBlanco;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .menu{
+        background-color: $colorGrisClaro;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1;
+        .close{
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $colorBlanco;
+            border: solid 1px $colorBlanco;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 30px;
+        }
+        nav{
+            height: 100%;
+            z-index: 10;
+            .menu-menu-1-container{
+                height: 100%;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    height: 100%;
+                    li{
+                        text-align: center;
+                        display: block;
+                        a{
+                            color: $colorBlanco;
+                            padding: 10px 15px;
+                            display: block;
+                            text-decoration: none;
+                            font-family: $font-family-rajdhani;
+                            font-size: $font-size-15;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .menu-active{
+        opacity: 1;
+        height: 100%;
+        transition: overflow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+    }
+    @include Responsive($desktop){
+        .toggle{
+           display: none;
+        }
+        .menu{
+            display: block;
+            position: relative;
+            background-color: transparent;
+            opacity: 1;
+            height: auto;
+             
+            .close{
+               display: none;
+            }
+            nav{
+                height: 100%;
+                .menu-menu-1-container{
+                    height: 100%;
+                    ul{
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin: 0;
+                        li{
+                            a{
+                                color: $colorBlanco;
+                                padding: 10px;
+                                display: block;
+                                font-weight: 500;
+                                &:hover{
+                                    color: $colorRosa;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
+}

@@ -1,0 +1,35 @@
+node_modules
+custom-post
+
+# Ignorar el archivo gulp
+gulpfile.js
+
+# Ignorar los archivos de paquetes
+package.json
+package-lock.json
+yarn.lock
+
+wp-config.php
+
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+

@@ -1,0 +1,86 @@
+/* Estilo para el encabezado de la página de archivo */
+.page-header {
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo para los artículos en la página de archivo */
+.entry-header {
+    margin-bottom: 10px;
+}
+
+.entry-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.entry-content {
+    margin-bottom: 20px;
+}
+
+.entry-footer {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Estilo para el contenedor del artículo */
+article {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para la miniatura de la entrada */
+.entry-thumbnail {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.entry-thumbnail img {
+    border-radius: 5px;
+}
+
+/* Estilo para el contenido de la entrada */
+.entry-content-wrapper {
+    flex-grow: 1;
+}
+
+/* Estilo para el encabezado de la entrada */
+.entry-header {
+    margin-bottom: 10px;
+}
+
+.entry-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.entry-title a {
+    text-decoration: none;
+    color: #0073aa;
+    transition: color 0.3s;
+}
+
+.entry-title a:hover {
+    color: #005177;
+}
+
+/* Estilo para el contenido de la entrada */
+.entry-content {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el pie de página de la entrada */
+.entry-footer {
+    font-size: 14px;
+    color: #666;
+}
