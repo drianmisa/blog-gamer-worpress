@@ -1,0 +1,63 @@
+.segunda-cat{
+    margin-bottom: 80px;
+    .grid-item-entada{
+        list-style: none;
+        padding: 0;
+        display: grid;
+        li{
+            overflow: hidden;
+            img{
+                height: 300px;
+                width: 100%;
+                object-fit: cover ;
+                &:hover{
+                    transform: scale(1.1);
+                    transition:transform 0.3s ease-in-out ;
+
+                }
+            }
+            div{
+                margin-top: -10px;
+                padding: 30px;
+                height: 200px;
+                background-color: $grisItemEntrada;
+                span{
+                    padding: 0;
+                    font-size: 12px;
+                    color: $colorBlancoCat;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    color: $colorBlanco;
+                    li{
+                        font-size: $font-size-16;
+                        color: $colorGrisMetas;
+                        span{
+                            color: $colorBlanco;
+                            font-size: $font-size-16;
+                        }
+                    }
+                }
+                a{
+                    color: $colorBlanco;
+                    text-decoration: none;
+                    h3{
+                        margin: 0;
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                    }
+                    &:hover{
+                        color: $colorRosa;
+                    }
+                }
+               
+            }
+        }
+
+        @include Responsive($tablet){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

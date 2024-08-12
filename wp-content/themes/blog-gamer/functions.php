@@ -268,6 +268,3 @@ function flhm_wp_html_compression_start()
 /* Incluir Componentes
 /*-----------------------------------------------------------------------------------*/
  include (get_template_directory() . "/template-parts/witget/witget-sidebar.php");
-
-
-
