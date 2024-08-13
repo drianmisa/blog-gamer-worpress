@@ -1,0 +1,75 @@
+.component-hov-box{
+    margin-bottom: 80px;
+    .item-component-hov-box{
+        display: grid;
+        gap: 20px;
+        .div-item-component-hov-box{
+            height: 250px;          
+            overflow: hidden;
+            position: relative;
+            .a-item-component-hov-box{
+                height: 250px;
+                .item-hov-zoom{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease; 
+
+                }
+                &:hover > .item-hov-zoom{
+                    transform: scale(1.1);
+                }
+
+            }
+            .container-data{
+                background-color: $colorBoxTransparencia;
+                padding: 10px 20px;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    margin: 0;
+                    color: $colorBlanco;
+                    h3{
+                        
+                        text-decoration: none;
+                        margin: 0;
+                        margin-top: 5px;
+                    }
+                    &:hover{
+                        color: $colorRosa;
+                    }
+
+                }
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    li{
+                        font-size: $font-size-16;
+                        color: $colorGrisMetas;
+                        span{
+                            color: $colorBlanco;
+                            font-size: $font-size-16;
+                        }
+
+                    }
+                }
+                
+
+            }
+        }
+
+
+        @include Responsive($mobile){
+            grid-template-columns: 1fr 1fr;     
+            
+        }
+        @include Responsive($tablet){
+            grid-template-columns: 1fr 1fr 1fr;     
+            
+        }
+    }
+}

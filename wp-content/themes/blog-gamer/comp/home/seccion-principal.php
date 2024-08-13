@@ -3,8 +3,8 @@
         <?php
         // Crear una nueva consulta para las últimas 3 entradas
         $recent_posts = new WP_Query(array(
-            'posts_per_page' => 3, // Número de entradas a mostrar
-            'post_status' => 'publish' // Solo mostrar publicaciones publicadas
+            'posts_per_page' => 3, 
+            'post_status' => 'publish' 
         ));
 
         // Comprobar si hay entradas que mostrar
@@ -18,14 +18,19 @@
                     <?php endif; ?>
 
                     <div class="container-data">
-                        <!-- Categoría -->
                         <span><?php $categories = get_the_category();
                                 if (!empty($categories)) {
                                     echo '<span>' . esc_html($categories[0]->name) . '</span>';
                                 } ?></span>
-                        <h2><?php the_title(); ?></h2>
+                        <h2> 
+                            <?php 
+                                $title = get_the_title();
+                                // Limitar el título a 50 caracteres
+                                $limited_title = mb_strimwidth($title, 0, 70, '...');
+                                echo esc_html($limited_title); 
+                            ?>
+                        </h2>
                         <ul>
-                            <!-- Autor y fecha -->
                             <li>por <span><?php the_author(); ?></span> | <?php echo get_the_date(); ?></li>
                         </ul>
                     </div>

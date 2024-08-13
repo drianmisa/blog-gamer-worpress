@@ -1,6 +1,6 @@
 <div class="wrap">
    <div class="component-hov-box">
-        <h2>Ultimas noticias</h2>
+        <h2>Recetas</h2>
 
         <div class="item-component-hov-box">
         <?php
@@ -8,7 +8,7 @@
         $recent_posts = new WP_Query(array(
             'posts_per_page' => 3,
             'post_status' => 'publish',
-            'category_name' => 'noticias'
+            'category_name' => 'recetas'
         ));
 
         // Comprobar si hay entradas que mostrar

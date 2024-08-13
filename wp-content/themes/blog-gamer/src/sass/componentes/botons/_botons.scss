@@ -24,7 +24,7 @@
     cursor: pointer;
     &:hover{
         background-color: $colorGris;
-        color: $colorBlanco;
+        color: $colorBlanco !important;
     }
     
 }
