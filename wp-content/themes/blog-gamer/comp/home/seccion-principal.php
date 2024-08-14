@@ -3,8 +3,8 @@
         <?php
         // Crear una nueva consulta para las últimas 3 entradas
         $recent_posts = new WP_Query(array(
-            'posts_per_page' => 3, 
-            'post_status' => 'publish' 
+            'posts_per_page' => 3,
+            'post_status' => 'publish'
         ));
 
         // Comprobar si hay entradas que mostrar
@@ -18,16 +18,16 @@
                     <?php endif; ?>
 
                     <div class="container-data">
-                        <span><?php $categories = get_the_category();
-                                if (!empty($categories)) {
-                                    echo '<span>' . esc_html($categories[0]->name) . '</span>';
-                                } ?></span>
-                        <h2> 
-                            <?php 
-                                $title = get_the_title();
-                                // Limitar el título a 50 caracteres
-                                $limited_title = mb_strimwidth($title, 0, 70, '...');
-                                echo esc_html($limited_title); 
+                        <span class="btn-rosa-cat"><?php $categories = get_the_category();
+                                                    if (!empty($categories)) {
+                                                        echo '<span>' . esc_html($categories[0]->name) . '</span>';
+                                                    } ?></span>
+                        <h2>
+                            <?php
+                            $title = get_the_title();
+                            // Limitar el título a 50 caracteres
+                            $limited_title = mb_strimwidth($title, 0, 70, '...');
+                            echo esc_html($limited_title);
                             ?>
                         </h2>
                         <ul>

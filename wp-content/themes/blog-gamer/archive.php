@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-9">
+<div class="wrap">
+    <div class="contein-single-post">
+        <div>
             <?php if ( have_posts() ) : ?>
-                <header class="page-header">
                     <h1 class="page-title">
                         <?php
                         if ( is_category() ) {
@@ -13,29 +12,30 @@
                             single_tag_title();
                         } elseif ( is_author() ) {
                             the_post();
-                            echo 'Author: ' . get_the_author();
+                            echo 'Autor: ' . get_the_author();
                             rewind_posts();
                         } elseif ( is_day() ) {
-                            echo 'Day: ' . get_the_date();
+                            echo 'Dia: ' . get_the_date();
                         } elseif ( is_month() ) {
-                            echo 'Month: ' . get_the_date( 'F Y' );
+                            echo 'Mes: ' . get_the_date( 'F Y' );
                         } elseif ( is_year() ) {
-                            echo 'Year: ' . get_the_date( 'Y' );
+                            echo 'Año: ' . get_the_date( 'Y' );
                         } else {
-                            _e( 'Archives', 'your-theme-textdomain' );
+                            _e( 'Archivos', 'your-theme-textdomain' );
                         }
                         ?>
                     </h1>
-                </header>
-
+                <div class="grid-archive">
                 <?php
-                // Inicio del loop
-                while ( have_posts() ) : the_post();
-                    // Incluir la plantilla de contenido
-                    get_template_part( 'template-parts/content', get_post_format() );
-                endwhile;
+                    while ( have_posts() ) : the_post();
+                        get_template_part( 'template-parts/content', get_post_format() );
+                    endwhile;
+                ?>
 
-                // Navegación
+                </div>
+                
+                <?php
+
                 the_posts_pagination( array(
                     'prev_text' => __( 'Previous page', 'your-theme-textdomain' ),
                     'next_text' => __( 'Next page', 'your-theme-textdomain' ),
@@ -43,14 +43,16 @@
                 ) );
 
             else :
-                // Incluir la plantilla de contenido cuando no hay posts
                 get_template_part( 'template-parts/content', 'none' );
 
             endif;
             ?>
         </div>
 
-        <div class="col-12 col-md-3">
+        <div class="sidebar-archive">
+                <div>
+                    <?php include(get_template_directory() . "/comp/header/form-busqueda.php"); ?>
+                </div>
             <?php get_sidebar(); ?>
         </div>
     </div>

@@ -19,14 +19,19 @@
 
                                 <?php };?>
                         <div>
-                            <a class="btn-rosa-cat" href="<?php echo esc_url(get_category_link($categories[0]->term_id)); ?>">
-                                <?php
+                            <?php
                                 $categories = get_the_category();
                                 if (!empty($categories)) {
-                                    echo '<span>' . esc_html($categories[0]->name) . '</span>';
+                                    $category_id = $categories[0]->term_id;
+                                    $category_name = esc_html($categories[0]->name); 
+                                    $category_link = esc_url(get_category_link($category_id)); 
+                                    ?>
+                                    <a class="btn-rosa-cat" href="<?php echo $category_link; ?>">
+                                        <?php echo $category_name; ?>
+                                    </a>
+                                    <?php
                                 }
-                                ?>
-                            </a>
+                            ?>
                             <a href="<?php echo get_permalink() ;?>">
                                 <h3>
                                     <?php

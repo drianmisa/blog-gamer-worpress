@@ -20,13 +20,11 @@
                 margin-top: -10px;
                 padding: 20px;
                 height: 170px;
-                background-color: $grisItemEntrada;
+                background: $grisItemEntrada;
                 z-index: 1;
                 position: relative;
                 span{
                     padding: 0;
-                    font-size: 12px;
-                    color: $colorBlancoCat;
                 }
                 ul{
                     list-style: none;
@@ -45,10 +43,14 @@
                 a{
                     color: $colorBlanco;
                     text-decoration: none;
+                    transition: color 0.3s ease;
                     h3{
                         margin: 0;
                         margin-top: 10px;
                         margin-bottom: 5px;
+                        font-weight: bold;
+                        text-shadow: 1px 1px 1px black;
+
                     }
                     &:hover{
                         color: $colorRosa;
@@ -59,6 +61,9 @@
         }
 
         @include Responsive($tablet){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include Responsive($desktop){
             grid-template-columns: repeat(3, 1fr);
         }
     }

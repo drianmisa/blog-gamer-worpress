@@ -22,7 +22,7 @@
 
             }
             .container-data{
-                background-color: $colorBoxTransparencia;
+                background: $colorBoxTransparencia;
                 padding: 10px 20px;
                 position: absolute;
                 bottom: 0px;
@@ -32,11 +32,16 @@
                     text-decoration: none;
                     margin: 0;
                     color: $colorBlanco;
+                    transition: color 0.3s ease;
                     h3{
                         
                         text-decoration: none;
                         margin: 0;
                         margin-top: 5px;
+                        font-weight: bold;
+                        text-shadow: 1px 1px 6px black;
+
+                        
                     }
                     &:hover{
                         color: $colorRosa;
@@ -68,8 +73,10 @@
             
         }
         @include Responsive($tablet){
-            grid-template-columns: 1fr 1fr 1fr;     
-            
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include Responsive($desktop){
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

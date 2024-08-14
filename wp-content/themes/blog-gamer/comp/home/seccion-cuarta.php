@@ -23,14 +23,19 @@
                         <?php endif; ?>
                     </a>
                     <div class="container-data">
-                        <a class="btn-rosa-cat" href="<?php echo esc_url(get_category_link($categories[0]->term_id)); ?>">
-                                <?php
-                                $categories = get_the_category();
-                                if (!empty($categories)) {
-                                    echo esc_html($categories[0]->name);
-                                }
+                        <?php
+                            $categories = get_the_category();
+                            if (!empty($categories)) {
+                                $category_id = $categories[0]->term_id;
+                                $category_name = esc_html($categories[0]->name); 
+                                $category_link = esc_url(get_category_link($category_id)); 
                                 ?>
-                        </a>
+                                <a class="btn-rosa-cat" href="<?php echo $category_link; ?>">
+                                    <?php echo $category_name; ?>
+                                </a>
+                                <?php
+                            }
+                        ?>
                         <a href="<?php the_permalink(); ?>">
                             <h3>
                                 <?php 

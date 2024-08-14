@@ -14,13 +14,14 @@
 }
 .btn-rosa-cat{
     background-color: $colorRosa;
-    color:$colorBlanco;
+    color:$colorBlanco !important;
     text-decoration: none;
     padding: 0px 5px;
     font-family:$font-family-rajdhani;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
     &:hover{
         background-color: $colorGris;
