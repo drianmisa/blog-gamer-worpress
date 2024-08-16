@@ -163,6 +163,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 30px 0;
   .post-navigation__next, .post-navigation__prev{  
     a{
       text-decoration: none;
@@ -178,4 +179,49 @@
      
     }
   }
+
+  @include Responsive($tablet){
+    margin: 80px 0;       
+  }
+}
+
+
+.content-post{
+  hr{
+    margin-top: 80px;
+  }
+}
+
+
+
+
+
+/////////////////////////////
+/// 
+/// 
+.related-posts {
+margin-top: 40px;
+}
+
+.related-posts h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.related-posts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.related-posts ul li {
+    margin-bottom: 10px;
+}
+
+.related-posts ul li a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.related-posts ul li a:hover {
+    text-decoration: underline;
 }
