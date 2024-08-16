@@ -12,9 +12,7 @@ get_header();
                 </h1>
                 <div class="grid-archive">
                     <?php
-                    // Inicio del loop
                     while (have_posts()) : the_post();
-                        // Incluir la plantilla de contenido
                         get_template_part('template-parts/content', 'search');
                     endwhile; ?>
                 </div>
@@ -42,6 +40,5 @@ get_header();
 </div>
 
 <?php
-// Incluir el pie de página
 get_footer();
 ?>
