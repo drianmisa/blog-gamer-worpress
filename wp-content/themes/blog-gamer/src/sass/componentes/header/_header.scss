@@ -45,6 +45,7 @@
                         font-size: $font-size-15;
                         text-transform: uppercase;
                         padding: 10px 20px;
+                        transition: color 0.3s ease;
 
                         &:hover {
                             color: $colorRosa;
@@ -62,7 +63,6 @@
     padding: 0;
     flex-direction: row;
     gap: 10px;
-
     li {
         a {
             width: 30px !important;
@@ -75,12 +75,14 @@
             color: $colorBlanco;
             text-decoration: none;
             font-size: $font-size-16;
-
+            transition: border-color 0.3s ease, color 0.3s ease;
             &:hover {
                 color: $colorRosa;
+                border-color: $colorRosa;
             }
 
         }
+       
     }
 }
 .search-form {

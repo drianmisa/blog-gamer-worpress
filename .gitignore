@@ -1,5 +1,4 @@
 node_modules
-custom-post
 
 # Ignorar el archivo gulp
 gulpfile.js
