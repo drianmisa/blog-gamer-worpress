@@ -199,29 +199,44 @@
 /////////////////////////////
 /// 
 /// 
-.related-posts {
-margin-top: 40px;
+.related-posts{
+  ul{
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    li{
+      a{
+        color: $colorGrisTexto;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover{
+          color: $colorRosa;
+        }
+        img{
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+        
+      }
+    }
+
+    @include Responsive ($tablet){
+      grid-template-columns: repeat(2,1fr);
+      li{
+        a{
+          img{
+            height: 150px;
+          }
+        }
+      }
+    
+    }
+    @include Responsive ($desktop){
+      grid-template-columns: repeat(3,1fr);    
+    }
+  }
+ 
 }
 
-.related-posts h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.related-posts ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.related-posts ul li {
-    margin-bottom: 10px;
-}
-
-.related-posts ul li a {
-    text-decoration: none;
-    color: #0073aa;
-}
-
-.related-posts ul li a:hover {
-    text-decoration: underline;
-}
