@@ -35,13 +35,13 @@
                 </div>
                 
                 <?php
+                $icono = get_template_directory_uri();
 
                 the_posts_pagination( array(
-                    'prev_text' => __( 'Previous page', 'your-theme-textdomain' ),
-                    'next_text' => __( 'Next page', 'your-theme-textdomain' ),
-                    'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'your-theme-textdomain' ) . ' </span>',
+                    'prev_text' => 'Anterior',
+                    'next_text' => 'Siguiente',
                 ) );
-
+                
             else :
                 get_template_part( 'template-parts/content', 'none' );
 
