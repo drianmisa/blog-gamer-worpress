@@ -5,15 +5,16 @@
 @import "componentes/fonts/fonts";
 
 
+
 *{
   box-sizing: border-box;
 }
 
 body{
   margin:0 !important;
-  background-color: $colorGris;
+  background-color: var(--color-gris);
   font-size: 18px;
-  color: #fff;
+  color: var(--color-blanco);
   font-family:$font-family-roboto ;
   font-size: $font-size-18;
 }
@@ -115,3 +116,5 @@ $large: 1200px;
 @import "componentes/blog/single-post";
 @import "componentes/blog/archive";
 @import "componentes/404/404";
+@import "../sass/darkteme";
+

@@ -1,6 +1,7 @@
 .grid-archive {
     display: grid;
     gap: 20px;
+    row-gap: 50px;
 
     @include Responsive($mobile) {
         grid-template-columns: repeat(2, 1fr);
@@ -33,12 +34,12 @@
                 margin: 10px 0;
 
                 a {
-                    color: $colorBlancoCat;
+                    color: var(--color-blanco-cat);
                     text-decoration: none;
                     transition: color 0.3s ease;
 
                     &:hover {
-                        color: $colorRosa;
+                        color: var(--color-rosa);
                     }
                 }
             }
@@ -46,7 +47,7 @@
 
         .entry-content {
             margin-bottom: 20px;
-            color: $colorGrisTexto;
+            color: var(--color-gris-texto);
 
         }
 
@@ -57,7 +58,7 @@
         margin-top: 10px;
 
         a {
-            color: $colorRosa;
+            color: var(--color-rosa);
             transition: color 0.3s ease;
             font-family: $font-family-rajdhani;
             text-transform: uppercase;
@@ -66,7 +67,7 @@
             font-size: 15px;
 
             &:hover {
-                color: $colorBlanco;
+                color: var(--color-blanco);
             }
 
         }
@@ -74,10 +75,10 @@
 
     .cats-archives {
         font-size: $font-size-16;
-        color: $colorGrisMetas;
+        color: var(--color-gris-metas);
 
         span {
-            color: $colorBlanco;
+            color: var(--color-blanco);
             font-size: $font-size-16;
         }
     }

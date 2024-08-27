@@ -13,7 +13,7 @@
       ?>
     </div>
 
-    <div>
+    <div class="wrap-social">
       <?php include(get_template_directory() . "/comp/header/social.php"); ?>
     </div>
   </div>

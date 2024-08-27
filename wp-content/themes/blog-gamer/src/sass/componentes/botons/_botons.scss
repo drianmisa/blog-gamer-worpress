@@ -1,6 +1,6 @@
 .btn-rosa{
-    background-color: $colorRosa;
-    color:$colorBlanco;
+    background-color: var(--color-rosa);
+    color: var(--color-gris-color-blanco);
     text-decoration: none;
     padding: 10px;
     font-family:$font-family-rajdhani;
@@ -8,13 +8,14 @@
     font-weight: 600;
     font-size: 16px;
     &:hover{
-        background-color: $colorGris;
-        color: $colorBlanco;
+        background-color: var(--color-gris);
+        color: var(--color-blanco);
+      
     }
 }
 .btn-rosa-cat{
-    background-color: $colorRosa;
-    color:$colorBlanco !important;
+    background-color: var(--color-rosa);
+    color: var(-color-blanco) !important;
     text-decoration: none;
     padding: 0px 5px;
     font-family:$font-family-rajdhani;
@@ -23,9 +24,13 @@
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    color: var(--color-blanco);
+
     &:hover{
-        background-color: $colorGris;
-        color: $colorBlanco !important;
+        background-color: var(--color-gris);
+        color: var(--color-blanco) !important;
     }
     
 }
+
+

@@ -2,7 +2,7 @@
     display: grid;
     gap: 20px;
     .item-wrap{
-        background-color: $colorGrisClaro;
+        background-color: var(--color-gris-claro);
         padding: 30px;
         display: flex;
         align-items: center;
@@ -13,7 +13,7 @@
                 font-weight: bold;
                 font-family: $font-family-rajdhani;
                 text-transform: uppercase;
-                color: $colorBlanco;
+                color: var(--color-blanco);
                 text-decoration: none;
                 text-align: center;
                 display: block;

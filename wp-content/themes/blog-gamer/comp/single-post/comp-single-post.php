@@ -4,7 +4,7 @@
                 <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo the_title(); ?>">
                 <div class="data-title">
                     <div>
-                        <a href="<?php $categories = get_the_category();
+                        <a class="btn-rosa" href="<?php $categories = get_the_category();
                                     echo esc_url(get_category_link($categories[0]->term_id)); ?>">
                             <?php
                             if (!empty($categories)) {

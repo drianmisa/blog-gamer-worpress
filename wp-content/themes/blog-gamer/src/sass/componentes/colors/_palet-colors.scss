@@ -1,9 +1,22 @@
-$colorGris: #111;
-$colorGrisClaro: #161616;
-$colorBlanco: #fff;
-$colorRosa:#dc143f;
-$grisItemEntrada: #222222;
-$colorGrisMetas:#999;
-$colorGrisTexto:#adadad;
-$colorBlancoCat:#d6d6d6;
-$colorBoxTransparencia:linear-gradient(to top, black, transparent);
+:root {
+   --color-gris: #111;
+   --color-gris-claro: #161616;
+   --color-blanco: #fff;
+   --color-rosa: #dc143f;
+   --gris-item-entrada: #222222;
+   --color-gris-metas: #adadad;
+   --color-gris-texto: #adadad;
+   --color-blanco-cat: #d6d6d6;
+   --color-box-transparencia: linear-gradient(to top, black, transparent);
+}
+.claro-theme{
+   --color-gris: #fff;
+   --color-gris-claro: #161616;
+   --color-blanco: #111;
+   --color-rosa: #dc143f;
+   --gris-item-entrada: #161616;
+   --color-gris-metas: #130c0c;
+   --color-gris-texto: #adadad;
+   --color-blanco-cat: #222222;
+}
+

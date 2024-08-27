@@ -12,41 +12,41 @@
             if ($recent_posts->have_posts()) :
                 while ($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
                     <li>
-                        <a href="<?php echo get_permalink() ;?>">
-                            <?php if(the_post_thumbnail()){;?>
+                        <a href="<?php echo get_permalink(); ?>">
+                            <?php if (the_post_thumbnail()) {; ?>
                                 <img src="<?php echo get_template_directory_uri() . '/assets/common/images/images-webp/home/seccion-prin/freepik_standard_150318475.webp'; ?>" alt="title"></a>
-                            <?php } else{;?>
+                    <?php } else {; ?>
 
-                                <?php };?>
-                        <div>
-                            <?php
-                                $categories = get_the_category();
-                                if (!empty($categories)) {
-                                    $category_id = $categories[0]->term_id;
-                                    $category_name = esc_html($categories[0]->name); 
-                                    $category_link = esc_url(get_category_link($category_id)); 
-                                    ?>
-                                    <a class="btn-rosa-cat" href="<?php echo $category_link; ?>">
-                                        <?php echo $category_name; ?>
-                                    </a>
-                                    <?php
-                                }
-                            ?>
-                            <a href="<?php echo get_permalink() ;?>">
-                                <h3>
-                                    <?php
-                                        $title = get_the_title();
-                                        // Limitar el título a 50 caracteres
-                                        $limited_title = mb_strimwidth($title, 0, 70, '...');
-                                        echo esc_html($limited_title);
-                                    ?>
-                                </h3>
+                    <?php }; ?>
+                    <div class="container-data">
+                        <?php
+                        $categories = get_the_category();
+                        if (!empty($categories)) {
+                            $category_id = $categories[0]->term_id;
+                            $category_name = esc_html($categories[0]->name);
+                            $category_link = esc_url(get_category_link($category_id));
+                        ?>
+                            <a class="btn-rosa-cat" href="<?php echo $category_link; ?>">
+                                <?php echo $category_name; ?>
                             </a>
+                        <?php
+                        }
+                        ?>
+                        <a href="<?php echo get_permalink(); ?>">
+                            <h3>
+                                <?php
+                                $title = get_the_title();
+                                // Limitar el título a 50 caracteres
+                                $limited_title = mb_strimwidth($title, 0, 70, '...');
+                                echo esc_html($limited_title);
+                                ?>
+                            </h3>
+                        </a>
 
-                            <ul>
+                        <ul>
                             <li>por <span><?php the_author(); ?></span> | <?php echo get_the_date(); ?></li>
                         </ul>
-                        </div>
+                    </div>
                     </li>
                 <?php
                 endwhile;

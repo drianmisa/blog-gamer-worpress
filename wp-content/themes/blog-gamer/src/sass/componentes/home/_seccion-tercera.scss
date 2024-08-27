@@ -20,7 +20,7 @@
                 margin-top: -10px;
                 padding: 20px;
                 height: 170px;
-                background: $grisItemEntrada;
+                background: var(--gris-item-entrada);
                 z-index: 1;
                 position: relative;
                 span{
@@ -30,18 +30,18 @@
                     list-style: none;
                     padding: 0;
                     margin: 0;
-                    color: $colorBlanco;
+                    color: var(--color-blanco);
                     li{
                         font-size: $font-size-16;
-                        color: $colorGrisMetas;
+                        color: var(--color-gris-metas);
                         span{
-                            color: $colorBlanco;
+                            color: var(--color-blanco);
                             font-size: $font-size-16;
                         }
                     }
                 }
                 a{
-                    color: $colorBlanco;
+                    color: var(--color-blanco);
                     text-decoration: none;
                     transition: color 0.3s ease;
                     h3{
@@ -53,7 +53,7 @@
 
                     }
                     &:hover{
-                        color: $colorRosa;
+                        color: var(--color-rosa);
                     }
                 }
                

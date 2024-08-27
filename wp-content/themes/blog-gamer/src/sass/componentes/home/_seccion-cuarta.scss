@@ -22,7 +22,7 @@
 
             }
             .container-data{
-                background: $colorBoxTransparencia;
+                background: var(--color-box-transparencia);
                 padding: 10px 20px;
                 position: absolute;
                 bottom: 0px;
@@ -31,7 +31,7 @@
                 a{
                     text-decoration: none;
                     margin: 0;
-                    color: $colorBlanco;
+                    color: var(--color-blanco);
                     transition: color 0.3s ease;
                     h3{
                         
@@ -44,7 +44,7 @@
                         
                     }
                     &:hover{
-                        color: $colorRosa;
+                        color: var(--color-rosa);
                     }
 
                 }
@@ -54,9 +54,9 @@
                     list-style: none;
                     li{
                         font-size: $font-size-16;
-                        color: $colorGrisMetas;
+                        color: var(--color-gris-metas);
                         span{
-                            color: $colorBlanco;
+                            color: var(--color-blanco);
                             font-size: $font-size-16;
                         }
 

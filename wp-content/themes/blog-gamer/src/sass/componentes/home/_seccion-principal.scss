@@ -17,35 +17,34 @@
             position: absolute; 
             bottom: 0;
             left: 0;
-            background: $colorBoxTransparencia;
+            background: var(--color-box-transparencia);
             padding: 20px;
             width: 100%;
 
             h2{
                 margin: 0;
                 font-size: 20px;
-                color: $colorBlanco;
+                color: var(--color-blanco);
                 font-weight: bold;
                 transition: color 0.3s ease;
                 text-shadow: 1px 1px 6px black;
                 &:hover{
-                    color: $colorRosa;
+                    color: var(--color-rosa);
                 }
             }
             ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
-                color: $colorBlanco;
+                color: var(--color-blanco);
                 li{
                     font-size: $font-size-16;
-                    color: $colorGrisMetas;
+                    color: var(--color-gris-metas);
                     span{
-                        color: $colorBlanco;
+                        color: var(--color-blanco);
                     }
                 }
-            }
-            
+            }            
 
         } 
 
