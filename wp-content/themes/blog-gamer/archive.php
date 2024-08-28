@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<?php include(get_template_directory() . "/comp/shared/banner.php");?>
 <div class="wrap">
     <div class="contein-single-post">
         <div>
@@ -30,6 +30,8 @@
                     while ( have_posts() ) : the_post();
                         get_template_part( 'template-parts/content', get_post_format() );
                     endwhile;
+                   
+
                 ?>
 
                 </div>
@@ -58,5 +60,5 @@
         </div>
     </div>
 </div>
-
+<?php include(get_template_directory() . "/comp/shared/banner.php");?>
 <?php get_footer(); ?>

@@ -2,6 +2,7 @@
 // Incluir el encabezado
 get_header();
 ?>
+<?php include(get_template_directory() . "/comp/shared/banner.php"); ?>
 
 <div class="wrap">
     <div class="contein-single-post">
@@ -31,13 +32,14 @@ get_header();
         </div>
 
         <div class="sidebar-archive">
-                <div>
-                    <?php include(get_template_directory() . "/comp/header/form-busqueda.php"); ?>
-                </div>
+            <div>
+                <?php include(get_template_directory() . "/comp/header/form-busqueda.php"); ?>
+            </div>
             <?php get_sidebar(); ?>
         </div>
     </div>
 </div>
+<?php include(get_template_directory() . "/comp/shared/banner.php"); ?>
 
 <?php
 get_footer();

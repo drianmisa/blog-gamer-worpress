@@ -259,3 +259,4 @@ include(get_template_directory() . "/template-parts/witget/witget-sidebar.php");
 /*-----------------------------------------------------------------------------------*/
 include(get_template_directory() . "/template-parts/custom-post/social.php");
 include(get_template_directory() . "/template-parts/custom-post/footer.php");
+include(get_template_directory() . "/template-parts/custom-post/banners-js.php");

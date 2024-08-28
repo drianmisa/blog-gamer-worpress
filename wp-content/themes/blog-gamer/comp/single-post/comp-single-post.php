@@ -29,6 +29,7 @@
                             include(get_template_directory(). '/comp/shared/shared-post.php');
                             the_content(); ?>
                         <hr>
+
                     </div>
                     <div class="arr-single-post">
                         <div class="post-navigation__prev">
@@ -38,6 +39,8 @@
                             <?php next_post_link('%link', '<span class="arr-wrod">Siguiente entrada</span> →'); ?>
                         </div>
                     </div>
+                    <?php include(get_template_directory() . "/comp/shared/banner.php") ?>
+
                     <!-- Componente de Entradas Relacionadas -->
                     <div class="related-posts">
                         <h2>Entradas Relacionadas</h2>
