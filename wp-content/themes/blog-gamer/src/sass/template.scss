@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrap{
-  max-width: 1170px;
+  max-width: 1140px;
   width: 90%;
   margin: 0 auto;
 }
@@ -38,52 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @import "componentes/botons/botons";
-
-
-
-/*****************Estilos del sidebar de busqueda********************************************
-
-/* Estilo para la etiqueta del campo de búsqueda */
-.wp-block-search__label {
-  font-size: 16px; /* Tamaño de fuente */
-  color: #333; /* Color del texto */
-  display: block; /* Mostrar como bloque */
-  margin-bottom: 10px; /* Espaciado inferior */
-}
-
-/* Estilo para el contenedor interno */
-.wp-block-search__inside-wrapper {
-  display: flex; /* Flexbox para alinear elementos */
-  align-items: center; /* Alinear elementos verticalmente */
-  margin-bottom: 25px;
-}
-
-/* Estilo para el campo de entrada */
-.wp-block-search__input {
-  flex: 1; /* Ocupa el espacio disponible */
-  padding: 10px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Borde del campo */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de fuente */
-  margin-right: 10px; /* Espaciado a la derecha */
-}
-
-/* Estilo para el botón de búsqueda */
-.wp-block-search__button {
-  padding: 10px 20px; /* Espaciado interno */
-  background-color: #0073aa; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de fuente */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s; /* Transición suave para el color de fondo */
-}
-
-/* Estilo para el botón de búsqueda en hover */
-.wp-block-search__button:hover {
-  background-color: #005177; /* Color de fondo al pasar el ratón */
-}
 
 /*-----------------------------------------------------------------------------------*/
 /* MOBILE STYLES
@@ -114,7 +68,13 @@ $large: 1200px;
 @import "componentes/home/seccion-cuarta";
 
 @import "componentes/blog/single-post";
+@import "componentes/shared/shared";
 @import "componentes/blog/archive";
 @import "componentes/404/404";
 @import "../sass/darkteme";
+
+
+
+
+
 

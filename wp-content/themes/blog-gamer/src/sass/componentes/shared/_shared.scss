@@ -1,0 +1,40 @@
+.shared {
+    margin-bottom: 50px;
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        margin-top: 0;
+        .icon-shared {
+            border-radius: 2px;
+            a {
+                color: #fff;
+                padding: 30px 15px;
+                font-size: 25px;
+                
+            }
+        }
+      
+        .whatsapp{
+            background-color: #25D366;
+        }
+        .telegram{
+            background-color: #0088CC;
+        }
+        .linkendin{
+            background-color: #0077B5;
+        }
+        .facebook{
+            background-color: #1877F2;
+        }
+        .twitter{
+            background-color: #000000;
+        }
+    }
+    .btn-shared{
+        margin-bottom: 0px;
+    }
+}

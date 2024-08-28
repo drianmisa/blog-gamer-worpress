@@ -7,18 +7,21 @@
 
   .data-title {
     margin-top: 20px;
+
     div {
       &:nth-of-type(1) {
-        text-align: center;   
-        a{
-          font-size: 16px; 
-          padding: 5px 10px;  
+        text-align: center;
+
+        a {
+          font-size: 16px;
+          padding: 5px 10px;
           background-color: var(--color-rosa);
           margin-bottom: 5px;
           display: inline-block;
           text-decoration: none;
           color: var(--color-blanco);
         }
+
         h1 {
           font-size: $font-size-28;
           text-align: center;
@@ -30,13 +33,14 @@
       &:nth-of-type(2) {
         text-align: center;
         color: var(--color-gris-metas);
+
         span {
-          color:var(--color-blanco-cat);
+          color: var(--color-blanco-cat);
         }
 
       }
     }
-    
+
   }
 
   @include Responsive($tablet) {
@@ -95,10 +99,14 @@
   display: grid;
   gap: 30px;
   margin-bottom: 80px;
-  .sidebar-archive{
-    ul{
+
+  .sidebar-archive {
+    ul {
       padding: 0;
-      .wp-block-latest-posts__list, .wp-block-archives-list, .wp-block-categories-list{
+
+      .wp-block-latest-posts__list,
+      .wp-block-archives-list,
+      .wp-block-categories-list {
         padding-left: 10px;
       }
     }
@@ -107,8 +115,9 @@
   p {
     color: var(--color-gris-texto);
   }
-  .wp-block-list{
-    li{
+
+  .wp-block-list {
+    li {
       color: var(--color-blanco-cat);
       margin-bottom: 15px;
     }
@@ -121,16 +130,21 @@
   h6 {
     color: var(--color-blanco-cat);
   }
-  .wp-block-latest-posts__list, .wp-block-archives-list, .wp-block-categories-list{
+
+  .wp-block-latest-posts__list,
+  .wp-block-archives-list,
+  .wp-block-categories-list {
     list-style: none;
     padding-left: 10px;
-    li{
+
+    li {
       position: relative;
       padding-left: 20px;
-      ::before{
-        content: ""; 
+
+      ::before {
+        content: "";
         display: inline-block;
-        width: 15px; 
+        width: 15px;
         height: 15px;
         background-image: url('./../../src/icons/chrevron_ritgth.png');
         background-size: contain;
@@ -139,12 +153,14 @@
         left: 0px;
         top: 5px;
       }
-      a{
+
+      a {
         color: var(--color-blanco-cat);
         text-decoration: none;
         font-size: $font-size-16;
         transition: color 0.3s ease;
-        &:hover{
+
+        &:hover {
           color: var(--color-rosa);
         }
       }
@@ -152,40 +168,44 @@
   }
 
   @include Responsive($tablet) {
-    grid-template-columns: 3fr 1fr ;
+    grid-template-columns: 3fr 1fr;
   }
 }
 
 
-.arr-single-post{
+.arr-single-post {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 0;
-  .post-navigation__next, .post-navigation__prev{  
-    a{
+
+  .post-navigation__next,
+  .post-navigation__prev {
+    a {
       text-decoration: none;
       color: var(--color-blanco);
       background-color: var(--color-rosa);
       padding: 10px 20px;
-      .arr-wrod{
+
+      .arr-wrod {
         display: none;
-        @include Responsive($tablet){
-          display: contents;        
+
+        @include Responsive($tablet) {
+          display: contents;
         }
       }
-     
+
     }
   }
 
-  @include Responsive($tablet){
-    margin: 80px 0;       
+  @include Responsive($tablet) {
+    margin: 80px 0;
   }
 }
 
 
-.content-post{
-  hr{
+.content-post {
+  hr {
     margin-top: 80px;
   }
 }
@@ -197,66 +217,74 @@
 /////////////////////////////
 /// 
 /// 
-.related-posts{
-  ul{
+.related-posts {
+  ul {
     padding: 0;
     list-style: none;
     display: grid;
     gap: 20px;
-    li{
-      a{
+
+    li {
+      a {
         color: var(--color-gris-texto);
         text-decoration: none;
         transition: color 0.3s ease;
-        &:hover{
+
+        &:hover {
           color: var(--color-rosa);
         }
-        img{
+
+        img {
           width: 100%;
           height: 250px;
           object-fit: cover;
         }
-        
+
       }
     }
 
-    @include Responsive ($tablet){
-      grid-template-columns: repeat(2,1fr);
-      li{
-        a{
-          img{
+    @include Responsive ($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+
+      li {
+        a {
+          img {
             height: 150px;
           }
         }
       }
-    
+
     }
-    @include Responsive ($desktop){
-      grid-template-columns: repeat(3,1fr);    
+
+    @include Responsive ($desktop) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
- 
+
 }
 
-.nav-links{
-  .page-numbers{
+.nav-links {
+  .page-numbers {
     background-color: var(--color-rosa);
     color: var(--color-blanco);
     padding: 10px;
     text-decoration: none;
-    .page-numbers{
+
+    .page-numbers {
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
     }
-    img{
+
+    img {
       width: 40px;
     }
   }
-  .nav-previous{ 
-    
-    a{
+
+  .nav-previous {
+
+    a {
       background-color: var(--color-rosa);
       color: var(--color-blanco);
       padding: 10px;
@@ -265,5 +293,13 @@
       text-align: center;
     }
 
+  }
+}
+
+.navigation {
+  margin-top: 80px;
+
+  h2.screen-reader-text {
+    display: none;
   }
 }

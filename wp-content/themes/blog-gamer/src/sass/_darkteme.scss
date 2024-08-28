@@ -1,64 +1,120 @@
-.claro-theme{
-    .btn-rosa-cat{
+.claro-theme {
+    .btn-rosa-cat {
         color: #fff !important;
-        &:hover{
+
+        &:hover {
             color: var(--color-blanco) !important;
         }
     }
-    .container-data{
-        h2, h3{
+
+    .container-data {
+
+        h2,
+        h3 {
             color: var(--color-gris) !important;
         }
-        ul{
-            li{
-                color: var(--color-gris-texto) !important ;
-                span{
-                    color: var(--color-gris) !important ;
+
+        ul {
+            li {
+                color: var(--color-gris-texto) !important;
+
+                span {
+                    color: var(--color-gris) !important;
                 }
             }
-            
+
         }
     }
-    .comp-footer{
-        a, p{
-            color: #fff !important;
-        }
-    }
-    .hero-singlepost{
-        .btn-rosa{
-            color: #fff !important;
-        }
-    }
-    .data-title{
-        h1{
-            color: #fff !important;
-        }
-        div{
-            color: #adadad !important;
-            span{
-                color: #fff !important;               
+
+    .comp-footer {
+        li {
+            &:hover {
+                background-color: var(--color-rosa) !important;
+                border-radius: 50%;
             }
         }
+
+        a {
+            color: #fff !important;
+        }
+
+        p {
+            color: #fff !important;
+        }
+
     }
-    .contein-single-post{
-        p{
+
+    .hero-singlepost {
+        .btn-rosa {
+            color: #fff !important;
+        }
+    }
+
+    .data-title {
+        h1 {
+            color: #000 !important;
+        }
+
+        div {
+            color: #adadad !important;
+
+            span {
+                color: #000 !important;
+            }
+        }
+
+        @include Responsive($tablet) {
+            h1 {
+                color: #fff !important;
+            }
+
+            div {
+                color: #adadad !important;
+
+                span {
+                    color: #fff !important;
+                }
+            }
+
+        }
+
+
+    }
+
+    .contein-single-post {
+        p {
             color: #000;
         }
     }
-    .arr-single-post{
-        a{
+
+    .arr-single-post {
+        a {
             color: #fff !important;
         }
-        
+
     }
-    .navigation{
-        .page-numbers{
+
+    .navigation {
+        .page-numbers {
             color: #fff !important;
         }
     }
-    .icon-moon{
+
+    .icon-moon {
         color: #000 !important;
         padding: 10px;
         cursor: pointer;
     }
+
+    .menu-menu-1-container {
+        a {
+            color: #fff !important;
+        }
+
+    }
+
+    .close {
+        color: #fff !important;
+    }
+
 }

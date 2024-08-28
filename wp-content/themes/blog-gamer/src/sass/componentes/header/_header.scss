@@ -107,7 +107,7 @@
     }
     
     .search-submit {
-        background-color: #3498db;
+        background-color: var(--color-rosa);
         color: white;
         border: none;
         padding: 8px 16px;
@@ -116,7 +116,7 @@
         cursor: pointer;
         font-size: 16px;
         &:hover{
-            background-color: #2980b9;
+            background-color: var(--color-rosa);
         }
     }
     

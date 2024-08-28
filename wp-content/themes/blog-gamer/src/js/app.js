@@ -49,4 +49,5 @@ document.addEventListener("DOMContentLoaded", () => {
          localStorage.setItem('theme', 'oscuro-theme');
       }
    });
+  
 });
