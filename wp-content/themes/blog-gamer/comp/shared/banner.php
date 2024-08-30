@@ -15,9 +15,6 @@
                 echo $html_code;
             }
         endwhile;
-        wp_reset_postdata();
-    else : ?>
-        <p>No hay banners disponibles</p>
-    <?php endif; ?>
+        wp_reset_postdata(); endif; ?>
 
 </div>
