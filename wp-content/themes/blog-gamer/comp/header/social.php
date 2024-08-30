@@ -25,7 +25,8 @@ if ($recent_posts->have_posts()) :
         ?>
     </ul>
     <span class="icon-moon" id="theme-toggle">
-        <i class="fas fa-moon"></i>
+        <i class="fas fa-moon iconLuna" style="display: none;"></i>
+        <i class="fa-regular fa-sun iconSol"></i>
     </span>
 
 <?php

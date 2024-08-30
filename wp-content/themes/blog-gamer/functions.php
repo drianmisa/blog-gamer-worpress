@@ -139,8 +139,6 @@ function template_scripts()
 
 	// Enqueue custom CSS file
 	wp_enqueue_style('template-css', get_template_directory_uri() . '/src/css/template.css');
-	
-	wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 	// Enqueue custom JavaScript file
 	wp_enqueue_script('app-js', get_stylesheet_directory_uri() . '/src/min-js/app.min.js', array(), null, true);
